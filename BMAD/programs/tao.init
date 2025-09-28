@@ -5,7 +5,7 @@
 /
 
 &tao_design_lattice
-  design_lattice(1)%file='/home/bell/8shape/BMAD/lattices/8-shape (48 mags 270 deg) resonant.bmad'
+  design_lattice(1)%file='/home/bell/FS_ring/BMAD/lattices/270_MeV_Referent_QFS_lattice_w_EB_on_SS.bmad'
 
 /
 

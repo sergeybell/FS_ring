@@ -1,0 +1,48 @@
+!+
+! Translated from MADX to Bmad by madx_to_bmad.py
+! File: FS_cor_lattice_w_EB_arc_and_equiv_electr_field.seq
+!-
+
+
+!TITLE Converted from LATTICE EDITOR: FS_cor lattice w E+B arc and equiv electr field.opt[*].  Sun Sep 28 15:51:53 2025
+
+!  Kinetic energy=270.113 MeV, mass=1876.56 MeV
+!  BetaX=5.4979 m,  AlphaX=-7.91333e-16,  BetaY=12.6913 m,  AlphaY=3.78225e-16
+!  DispX=-0.00345777 m,  DispPX=3.96233e-17,  DispY=0 m,  DispPY=0
+
+od1: drift, l = 0.25
+od2: drift, l = 0.25
+orb: drift, l = 2.2
+osf: drift, l = 0.15
+osd: drift, l = 0.15
+qfa1: quadrupole, l = 0.05, k1 = 3.922609163
+qda1: quadrupole, l = 0.05, k1 = -2.941956872
+qfa2: quadrupole, l = 0.05, k1 = 2.389800743
+qda2: quadrupole, l = 0.05, k1 = -2.473199325
+sfp: sextupole, l = 0.15, k2 = 3.450975803
+sdp: sextupole, l = 0.15, k2 = -4.397118335
+bpm: sbend, l = 0.15, angle = 0
+r1: sbend, l = 1.80786722, angle = 0.1963
+
+MACHINE: LINE=(QDA2, OD1, OSD, OD2, ORB, OD2, BPM, OD1, QFA2, QFA2, OD1,OSF, OD2, ORB, OD2, BPM, OD1, QDA2, QDA2, OD1,
+          OSD, OD2, ORB, OD2, BPM,OD1, QFA2, QFA1, OD1, SFP, OD2, R1, OD2, BPM, OD1, QDA1, QDA1, OD1, SDP,OD2, R1, OD2, BPM, OD1,
+          QFA1, QFA1, OD1, SFP, OD2, R1, OD2, BPM, OD1, QDA1,QDA1, OD1, SDP, OD2, R1, OD2, BPM, OD1, QFA1, QFA1, OD1, SFP, OD2,
+          R1, OD2,BPM, OD1, QDA1, QDA1, OD1, SDP, OD2, R1, OD2, BPM, OD1, QFA1, QFA1, OD1,SFP, OD2, R1, OD2, BPM, OD1, QDA1,
+          QDA1, OD1, SDP, OD2, R1, OD2, BPM, OD1,QFA1, QFA1, OD1, SFP, OD2, R1, OD2, BPM, OD1, QDA1, QDA1, OD1, SDP, OD2,R1, OD2,
+          BPM, OD1, QFA1, QFA1, OD1, SFP, OD2, R1, OD2, BPM, OD1, QDA1,QDA1, OD1, SDP, OD2, R1, OD2, BPM, OD1, QFA1, QFA1, OD1,
+          SFP, OD2, R1, OD2,BPM, OD1, QDA1, QDA1, OD1, SDP, OD2, R1, OD2, BPM, OD1, QFA1, QFA1, OD1,SFP, OD2, R1, OD2, BPM, OD1,
+          QDA1, QDA1, OD1, SDP, OD2, R1, OD2, BPM, OD1,QFA1, QFA2, OD1, SFP, OD2, ORB, OD2, BPM, OD1, QDA2, QDA2, OD1, SDP, OD2,
+         ORB, OD2, BPM, OD1, QFA2, QFA2, OD1, SFP, OD2, ORB, OD2, BPM, OD1, QDA2,QDA2, OD1, OSD, OD2, ORB, OD2, BPM, OD1, QFA2,
+          QFA2, OD1, OSF, OD2, ORB,OD2, BPM, OD1, QDA2, QDA2, OD1, OSD, OD2, ORB, OD2, BPM, OD1, QFA2, QFA1,OD1, SFP, OD2, R1,
+          OD2, BPM, OD1, QDA1, QDA1, OD1, SDP, OD2, R1, OD2, BPM,OD1, QFA1, QFA1, OD1, SFP, OD2, R1, OD2, BPM, OD1, QDA1, QDA1,
+          OD1, SDP,OD2, R1, OD2, BPM, OD1, QFA1, QFA1, OD1, SFP, OD2, R1, OD2, BPM, OD1, QDA1,QDA1, OD1, SDP, OD2, R1, OD2, BPM,
+          OD1, QFA1, QFA1, OD1, SFP, OD2, R1, OD2,BPM, OD1, QDA1, QDA1, OD1, SDP, OD2, R1, OD2, BPM, OD1, QFA1, QFA1, OD1,SFP,
+          OD2, R1, OD2, BPM, OD1, QDA1, QDA1, OD1, SDP, OD2, R1, OD2, BPM, OD1,QFA1, QFA1, OD1, SFP, OD2, R1, OD2, BPM, OD1,
+          QDA1, QDA1, OD1, SDP, OD2,R1, OD2, BPM, OD1, QFA1, QFA1, OD1, SFP, OD2, R1, OD2, BPM, OD1, QDA1,QDA1, OD1, SDP, OD2,
+          R1, OD2, BPM, OD1, QFA1, QFA1, OD1, SFP, OD2, R1, OD2,BPM, OD1, QDA1, QDA1, OD1, SDP, OD2, R1, OD2, BPM, OD1, QFA1,
+          QFA2, OD1,SFP, OD2, ORB, OD2, BPM, OD1, QDA2, QDA2, OD1, SDP, OD2, ORB, OD2, BPM,OD1, QFA2, QFA2, OD1, SFP, OD2, ORB,
+          OD2, BPM, OD1, QDA2)
+
+parameter[E_tot] = 13.37618406 * 1e9
+
+use, machine

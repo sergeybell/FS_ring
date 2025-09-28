@@ -4,9 +4,6 @@
 !  BetaX=2.73534 m,  AlphaX=-1.11737e-15,  BetaY=11.436 m,  AlphaY=-1.19642e-15 
 !  DispX=-0.00671915 m,  DispPX=5.17406e-15,  DispY=0 m,  DispPY=0 
 
-OPTION, -ECHO;
-ASSIGN, ECHO="line.echo";
-
 OD1: DRIFT, L=0.25 ;
 OD2: DRIFT, L=0.25 ;
 ORB: DRIFT, L=2.2 ;
@@ -48,17 +45,3 @@ SFP, OD2, BDA, OD2, BPM, OD1, QDA1, QDA1, OD1, SDP, OD2, BDA, OD2, BPM,
 OD1, QFA1, QFA2, OD1, SFP, OD2, ORB, OD2, BPM, OD1, QDA2, QDA2, OD1, SDP,  
 OD2, ORB, OD2, BPM, OD1, QFA2, QFA2, OD1, SFP, OD2, ORB, OD2, BPM, OD1,  
 QDA2);
-
-beam, MASS=1.8765592,CHARGE=1, ENERGY=2.14656438,
-      EX=3e-06, EY=1e-05, SIGE=0.001;
-
-use,period=machine;
-
-twiss energy=2.14656438, betx=2.73534, alfx=-1.11737e-15, 
-     bety=11.436, alfy=-1.19642e-15, 
-     dx=-0.00671915, dpx=5.17406e-15, 
-     dy=0, dpy=0;
-
-survey,;
-
-stop;
