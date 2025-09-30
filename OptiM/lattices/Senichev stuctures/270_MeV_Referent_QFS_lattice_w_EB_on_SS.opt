@@ -311,10 +311,10 @@ Energy[MeV]=270.00518   Mass[MeV]=1876.5592
 Emittance: ex[cm]=0.0003  ey[cm]=0.001  DP/P=0.001 
 
 
-Initial:	BetaX[cm]=273.534 	BetaY[cm]=1143.6 
-	AlfaX=-1.11737e-15 	AlfaY=-1.19642e-15  Qx=0  Qy=0
-	DispersX[cm]=-0.671915 	DispersY[cm]=0 
-	Dsp_PrimeX=5.17406e-15 	DspPrimeY=0 
+Initial:	BetaX[cm]=279.613 	BetaY[cm]=1528.47 
+	AlfaX=9.8494e-16 	AlfaY=1.45619e-15 
+	DispersX[cm]=-2.29749 	DispersY[cm]=0 
+	Dsp_PrimeX=-2.97709e-15 	DspPrimeY=0 
 
 	X[cm]=0.000    	Y[cm]=0.000    	Z[cm]=0.000    	S[cm]=0.000    
 	tetaX[deg]=0        	tetaY[deg]=0        
@@ -322,9 +322,9 @@ begin lattice. Number of periods=1
 
 #*********************************************************FIRST HALF**********
 #===============DRIFT=======================
-QDA2   OD1 OSD OD2  ORB  OD2  BPM  OD1  QFA2
-QFA2  OD1 OSF OD2  ORB OD2 BPM OD1   QDA2 
- QDA2   OD1 OSD OD2  ORB  OD2  BPM  OD1  QFA2
+QDA2  OD1 OSD OD2  ORB  OD2  BPM  OD1  QFA2
+QFA2  OD1 OSF OD2  ORB  OD2  BPM  OD1  QDA2 
+QDA2  OD1 OSD OD2  ORB  OD2  BPM  OD1  QFA2
 
 #==============BEND magnet==================
 
@@ -340,10 +340,6 @@ QDA2   OD1 SDN OD2  R3  OD2 BPM OD1  QFA2
 
 #===========================================
 
-
-
-#QFA2  OD1 SFN OD2  ORE  OD2 BPM OD1   QDA2 
-#QDA2  OD1 SDN OD2  ORE OD2 BPM OD1  QFA2
 
 #============WIEN filter====================
 
@@ -385,9 +381,6 @@ QDA2   OD1 SDN OD2  R3  OD2 BPM OD1  QFA2
 
 #===========================
 
-#QFA2  OD1 SFN OD2  ORE  OD2 BPM OD1   QDA2 
-#QDA2  OD1 SDN OD2  ORE OD2 BPM OD1  QFA2
-
 #============WIEN filter====================
 
 QFA2  OD1 SFN OD2  R3  OD2 BPM OD1   QDA2  
@@ -415,10 +408,7 @@ end lattice
 begin list
 # Magnetostatic ARC
 OD1 	L[cm]=25       
-OD2 	L[cm]=25       
-
-#ORE 	L[cm]=237.07875 
-#ORB 	L[cm]=253.36129       
+OD2 	L[cm]=25            
 
 ORE 	L[cm]=217      
 ORB 	L[cm]=220      
@@ -439,10 +429,6 @@ SFP 	L[cm]=15         	S[kG/cm/cm)]=0.00276958   Tilt[deg]=0
 SDP 	L[cm]=15         	S[kG/cm/cm)]=-0.00339598   Tilt[deg]=0
 SFN 	L[cm]=15         	S[kG/cm/cm)]=-0.00209837   Tilt[deg]=0
 SDN 	L[cm]=15         	S[kG/cm/cm)]=0.00379311   Tilt[deg]=0
-
-
-
-
 
 BPM 	L[cm]=15         	B[kG]=0          	G[kG/cm]=0        	Tilt[deg]=0
 
