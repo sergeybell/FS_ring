@@ -181,6 +181,13 @@ $Bbe=$Bplate*10;  =>  4.60023521
 
 $Bneg=$Ebp/($beta*$c/100);  =>-0.082439254
 $Btotal=($Bplate+$Bneg)*10;  =>  3.77584267
+#-------------------------------------
+# Magnetic Rigidity Btotal*R
+$BR=$Mdeu*$gamma*$beta*$c*0.01/$Q;  =>  3.47644231
+$R=$BR*10/$Btotal;  =>  9.20706347
+# Total lebgth of all magnets
+$LB_all=2*$pi*$R;  =>  57.8496859
+$Lone=$LB_all/(16*2);  =>  1.80780268
 
 #---------------------------------
 $R=$Mdeu*$gamma*$beta*$beta*$c*0.01*$c*0.01/($Q*($beta*$c*0.01*$Bplate+$Ebp));  =>  9.20706347
@@ -239,10 +246,10 @@ Energy[MeV]=270.11275   Mass[MeV]=1876.5592
 Emittance: ex[cm]=0.001  ey[cm]=0.001  DP/P=0.001 
 
 
-Initial:	BetaX[cm]=549.79 	BetaY[cm]=1269.13 
-	AlfaX=-7.91333e-16 	AlfaY=3.78225e-16 
-	DispersX[cm]=-0.345777 	DispersY[cm]=0 
-	Dsp_PrimeX=3.96233e-17 	DspPrimeY=0 
+Initial:	BetaX[cm]=548.985 	BetaY[cm]=1405.65 
+	AlfaX=4.42898e-16 	AlfaY=-1.3109e-16 
+	DispersX[cm]=0.111104 	DispersY[cm]=0 
+	Dsp_PrimeX=-2.57551e-16 	DspPrimeY=0 
 
 	X[cm]=0.000    	Y[cm]=0.000    	Z[cm]=0.000    	S[cm]=0.000    
 	tetaX[deg]=0        	tetaY[deg]=0        
@@ -255,35 +262,36 @@ QFA2  OD1 OSF OD2  ORB OD2 BPM OD1   QDA2
 
 #===========FIRST ARC==================
 
-QFA1  OD1 OSF OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 SFP OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 SFN OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 SFP OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 OSF OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 SFP OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 SFN OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 SFP OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
+
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
 #====================1-t half of 2-d SS=========
 
-QFA2  OD1 OSF OD2  ORB OD2 BPM OD1   QDA2 
+QFA2  OD1 OSD OD2  ORB OD2 BPM OD1   QDA2 
 QDA2   OD1 OSD OD2  ORB  OD2  BPM  OD1  QFA2
-QFA2  OD1 OSF OD2  ORB OD2 BPM OD1   QDA2 
+QFA2  OD1 OSD OD2  ORB OD2 BPM OD1   QDA2 
 
 
 #===============2-t half of 2-d SS================
@@ -293,35 +301,37 @@ QFA2  OD1 OSF OD2  ORB OD2 BPM OD1   QDA2
 
 #===========SECOND  ARC==================
 
-QFA1  OD1 OSF OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 SFP OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 SFN OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 SFP OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 OSF OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 SFP OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 SFN OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
-QFA1  OD1 SFP OD2  R1  OD2 BPM  OD1  QDA1  
-QDA1  OD1 SDP OD2  R1  OD2 BPM  OD1  QFA1
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
+
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
+
+QFA1  OD1 SFP OD2  BA  OD2 BPM  OD1  QDA1  
+QDA1  OD1 SDP OD2  BA  OD2 BPM  OD1  QFA1
 
 #====================1-t half of 1-t SS=========
 
-QFA2  OD1 SFP OD2  ORB OD2 BPM OD1   QDA2 
-QDA2   OD1 SDP OD2  ORB  OD2  BPM  OD1  QFA2
-QFA2  OD1 SFP OD2  ORB OD2 BPM OD1   QDA2 
+QFA2  OD1 OSD OD2  ORB OD2 BPM OD1   QDA2 
+QDA2   OD1 OSD OD2  ORB  OD2  BPM  OD1  QFA2
+QFA2  OD1 OSD OD2  ORB OD2 BPM OD1   QDA2 
 
 
 
@@ -342,26 +352,38 @@ OSD 	L[cm]=15
  
 
       
-QFA1 	L[cm]=5          	G[kG/cm]=1.364   	Tilt[deg]=0
-QDA1 	L[cm]=5          	G[kG/cm]=-1.023  	Tilt[deg]=0
-QFA2 	L[cm]=5          	G[kG/cm]=0.831   	Tilt[deg]=0
-QDA2 	L[cm]=5          	G[kG/cm]=-0.86   	Tilt[deg]=0
+QFA1 	L[cm]=5          	G[kG/cm]=1.365   	Tilt[deg]=0
+QDA1 	L[cm]=5          	G[kG/cm]=-1.013  	Tilt[deg]=0
+QFA2 	L[cm]=5          	G[kG/cm]=0.816   	Tilt[deg]=0
+QDA2 	L[cm]=5          	G[kG/cm]=-0.83   	Tilt[deg]=0
 
 
-SFP 	L[cm]=15         	S[kG/cm/cm)]=0.0435  		Tilt[deg]=0
-SDP 	L[cm]=15         	S[kG/cm/cm)]=-0.0216		Tilt[deg]=0
-SFN	L[cm]=15         	S[kG/cm/cm)]=0.0   Tilt[deg]=0
+
+
+#SFP 	L[cm]=15         	S[kG/cm/cm)]=0.0027695769   Tilt[deg]=0
+#SDP 	L[cm]=15         	S[kG/cm/cm)]=-0.00339597809   Tilt[deg]=0
+#SFN 	L[cm]=15         	S[kG/cm/cm)]=-0.00209836542   Tilt[deg]=0
+#SDN 	L[cm]=15         	S[kG/cm/cm)]=0.00079310524   Tilt[deg]=0
+
+SFP 	L[cm]=15         	S[kG/cm/cm)]=0.012   Tilt[deg]=0
+SDP 	L[cm]=15         	S[kG/cm/cm)]=-0.01529   Tilt[deg]=0
 
 
 
 BPM 	L[cm]=15         	B[kG]=0          	G[kG/cm]=0        	Tilt[deg]=0
+BA 	L[cm]=180.78027   	B[kG]=3.7758427   	G[kG/cm]=0        	Tilt[deg]=0
+
 
 
 # "E+B" element 
 
 
+#R1 	L[cm]=180.786722   	B[kG]=4.6002779   	Gb[kG/cm]=0  	E[kV/cm]=-120      	Ge[kV/cm^2]=0
 
-R1 	L[cm]=180.786722   	B[kG]=4.6002779   	Gb[kG/cm]=0  	E[kV/cm]=-120      	Ge[kV/cm^2]=0
+
+
+
+
 
 
 
@@ -391,18 +413,9 @@ L: OD2
 L: OD1
 EndBetaFitBlock
 
-4D_BetaBlock
-	Beta_X_1[cm]=549.79 Beta_X_2[cm]=1.000000000000e+00 
-	Alfa_X_1=0.0     	Alfa_X_2=0.0
-	Beta_Y_1[cm]=1269.13	Beta_Y_2[cm]=100.
-	Alfa_Y_1=0.0      	Alfa_Y_2=0.0 
-	Teta_1[deg]=0.   	Teta_2[deg]=0    U=0
-	Emit1[cm]=1.e-5. 	Emit2[cm]=1.e-5
-	DispX[cm]=0.     	DispY[cm]=0
-	DispXpr[cm]=0.   	DispYpr[cm]=0
-End4DBetaBlock
 
-SpaceChargeBlock
-  BeamCurrent[A]=0.1
-  BunchLength[cm]=1.0   dP/P=0.001   Alpha[-1,1]=0.   S_Offset[cm]=0.
-EndSpaceChargeBlock
+TrajParamBlock
+	X[cm]=0.0 	Teta_X[rad]=0.0
+	Y[cm]=0.0 	Teta_Y[rad]=0.0
+	s[cm]=0.0 	DeltaP/P=0.0
+EndTrajParamBlock
