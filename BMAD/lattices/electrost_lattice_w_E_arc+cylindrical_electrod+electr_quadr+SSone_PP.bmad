@@ -1,0 +1,62 @@
+!+
+! Translated from MADX to Bmad by madx_to_bmad.py
+! File: electrost_lattice_w_E_arc+cylindrical_electrod+electr_quadr+SSone_PP.seq
+!-
+
+
+!TITLE Converted from LATTICE EDITOR: electrost_lattice_w_E_arc+cylindrical_electrod+electr_quadr+SSone.opt[*].  Mon Nov 10 10:52:57 2025
+
+!  Kinetic energy=232.792 MeV, mass=938.272 MeV
+!  BetaX=21.7051 m,  AlphaX=-1.27694e-15,  BetaY=7.75695 m,  AlphaY=-7.42905e-16
+!  DispX=-0.00635762 m,  DispPX=-4.12632e-16,  DispY=0 m,  DispPY=0
+
+
+od1: drift, l = 0.25
+od2: drift, l = 0.25
+or1: drift, l = 4.685
+ld: quadrupole, l = 0.5, k1 = 2
+lf: quadrupole, l = 0.5, k1 = 2
+lds: quadrupole, l = 0.5, k1 = 3
+lfs: quadrupole, l = 0.5, k1 = 3
+sfp: sextupole, l = 0.15, k2 = 0
+sdp: sextupole, l = 0.15, k2 = 0
+bpm: sbend, l = 0.15, angle = 0
+r1: sbend, l = 4.685, angle = 0.1256636
+
+MACHINE: LINE=(Lds, OD1, SDP, OD2, OR1, OD2, BPM, OD1, Lfs, Lf, OD1, SFP,OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1, SDP, OD2,
+          R1, OD2, BPM, OD1, Lf, Lf,OD1, SFP, OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2, BPM, OD1,Lf, Lf, OD1, SFP,
+          OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2,BPM, OD1, Lf, Lf, OD1, SFP, OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1,
+          SDP, OD2,R1, OD2, BPM, OD1, Lf, Lf, OD1, SFP, OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1,SDP, OD2, R1, OD2, BPM, OD1, Lf, Lfs,
+          OD1, SFP, OD2, OR1, OD2, BPM, OD1,Lds, Lds, OD1, SDP, OD2, OR1, OD2, BPM, OD1, Lfs, Lf, OD1, SFP, OD2, R1,OD2, BPM,
+          OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2, BPM, OD1, Lf, Lf, OD1, SFP,OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2,
+          BPM, OD1, Lf, Lf,OD1, SFP, OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2, BPM, OD1,Lf, Lf, OD1, SFP, OD2, R1,
+          OD2, BPM, OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2,BPM, OD1, Lf, Lf, OD1, SFP, OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1, SDP,
+          OD2,R1, OD2, BPM, OD1, Lf, Lfs, OD1, SFP, OD2, OR1, OD2, BPM, OD1, Lds, Lds,OD1, SDP, OD2, OR1, OD2, BPM, OD1, Lfs, Lf,
+          OD1, SFP, OD2, R1, OD2, BPM,OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2, BPM, OD1, Lf, Lf, OD1, SFP, OD2, R1,OD2, BPM, OD1, Ld,
+          Ld, OD1, SDP, OD2, R1, OD2, BPM, OD1, Lf, Lf, OD1, SFP,OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2, BPM,
+          OD1, Lf, Lf,OD1, SFP, OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2, BPM, OD1,Lf, Lf, OD1, SFP, OD2, R1, OD2,
+          BPM, OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2,BPM, OD1, Lf, Lfs, OD1, SFP, OD2, OR1, OD2, BPM, OD1, Lds, Lds, OD1, SDP,OD2,
+          OR1, OD2, BPM, OD1, Lfs, Lf, OD1, SFP, OD2, R1, OD2, BPM, OD1, Ld, Ld,OD1, SDP, OD2, R1, OD2, BPM, OD1, Lf, Lf, OD1,
+          SFP, OD2, R1, OD2, BPM, OD1,Ld, Ld, OD1, SDP, OD2, R1, OD2, BPM, OD1, Lf, Lf, OD1, SFP, OD2, R1, OD2,BPM, OD1, Ld, Ld,
+          OD1, SDP, OD2, R1, OD2, BPM, OD1, Lf, Lf, OD1, SFP, OD2,R1, OD2, BPM, OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2, BPM, OD1,
+          Lf, Lf, OD1,SFP, OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2, BPM, OD1, Lf,Lfs, OD1, SFP, OD2, OR1, OD2,
+          BPM, OD1, Lds, Lds, OD1, SDP, OD2, OR1, OD2,BPM, OD1, Lfs, Lf, OD1, SFP, OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1, SDP, OD2,
+         R1, OD2, BPM, OD1, Lf, Lf, OD1, SFP, OD2, R1, OD2, BPM, OD1, Ld, Ld, OD1,SDP, OD2, R1, OD2, BPM, OD1, Lf, Lf, OD1, SFP,
+          OD2, R1, OD2, BPM, OD1, Ld,Ld, OD1, SDP, OD2, R1, OD2, BPM, OD1, Lf, Lf, OD1, SFP, OD2, R1, OD2, BPM,OD1, Ld, Ld, OD1,
+          SDP, OD2, R1, OD2, BPM, OD1, Lf, Lf, OD1, SFP, OD2, R1,OD2, BPM, OD1, Ld, Ld, OD1, SDP, OD2, R1, OD2, BPM, OD1, Lf,
+          Lfs, OD1, SFP,OD2, OR1, OD2, BPM, OD1, Lds)
+
+parameter[E_tot] = 1.171064246 * 1e9
+
+use, machine
+
+beginning[beta_a] = 21.7051
+beginning[beta_b] = 7.75695
+beginning[alpha_a] = -1.27694e-15
+beginning[alpha_a] = -7.42905e-16
+beginning[eta_x] = -0.00635762
+beginning[eta_y] = 0
+beginning[etap_x] = -4.12632e-16
+beginning[etap_y] = 0
+
+
