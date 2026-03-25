@@ -1,4 +1,4 @@
-!&tao_template_plot
+\!&tao_template_plot
   plot%name = "floor"
   plot%n_graph = 1
 !/

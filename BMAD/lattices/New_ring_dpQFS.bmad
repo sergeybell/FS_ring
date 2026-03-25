@@ -1,0 +1,57 @@
+!+
+! Translated from MADX to Bmad by madx_to_bmad.py
+! File: New_ring_dpQFS.seq
+!-
+
+
+!TITLE Converted from LATTICE EDITOR: New ring ARC_  Straight Section_d pQFS_W233_4_CELLs_3 supers_2arcs.opt[*].  Tue Mar 24 16:36:47 2026
+
+!  Kinetic energy=270 MeV, mass=1876.54 MeV
+!  BetaX=8.98979 m,  AlphaX=0,  BetaY=16.2975 m,  AlphaY=-0
+!  DispX=0.000450074 m,  DispPX=1.37503e-15,  DispY=0 m,  DispPY=0
+
+bm: sbend, l = 0.505635, angle = 0.2617994247
+bm2: sbend, l = 0.2528175, angle = 0.1308997124
+ora: drift, l = 2.2070568
+o4: drift, l = 0.45
+osf: drift, l = 0.1
+osd: drift, l = 0.1
+qf1: quadrupole, l = 0.2, k1 = 1.540299694
+qd1: quadrupole, l = 0.2, k1 = -1.107932238
+qd: quadrupole, l = 0.2, k1 = -0.7425852607
+qf: quadrupole, l = 0.2, k1 = 1.101110702
+qd2: quadrupole, l = 0.2, k1 = -0.7566799379
+qf2: quadrupole, l = 0.2, k1 = 1.046985991
+sd: drift, l = 0.12
+ra: sextupole, l = 2.2070568, k2 = 0
+
+MACHINE: LINE=(QD2, O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4, ORA,O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4, ORA,
+          O4, QF2, QF2, O4, ORA, O4,QD2, QD2, O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD, O4, BM2, O4, QD, O4, RA,O4, QF1, QF1, O4,
+          BM, O4, QD1, QD1, O4, Osd, Sd, Osd, RA, O4, QF, Osf, BM,Osf, QF, O4, RA, Osd, Sd, Osd, O4, QD1, QD1, O4, BM, O4, QF1,
+          QF1, O4, RA,O4, QD, O4, BM2, BM2, O4, QD, O4, RA, O4, QF1, QF1, O4, BM, O4, QD1, QD1,O4, Osd, Sd, Osd, RA, O4, QF, Osf,
+          BM, Osf, QF, O4, RA, Osd, Sd, Osd, O4,QD1, QD1, O4, BM, O4, QF1, QF1, O4, RA, O4, QD, O4, BM2, BM2, O4, QD, O4,RA, O4,
+          QF1, QF1, O4, BM, O4, QD1, QD1, O4, Osd, Sd, Osd, RA, O4, QF, Osf,BM, Osf, QF, O4, RA, Osd, Sd, Osd, O4, QD1, QD1, O4,
+          BM, O4, QF1, QF1, O4,RA, O4, QD, O4, BM2, O4, QD, O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD2, QD2,O4, ORA, O4, QF2, QF2,
+          O4, ORA, O4, QD2, QD2, O4, ORA, O4, QF2, QF2, O4,ORA, O4, QD2, QD2, O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4,
+          ORA,O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4, ORA, O4, QF2, QF2, O4, ORA, O4,QD2, QD2, O4, ORA, O4, QF2, QF2, O4, ORA,
+          O4, QD2, QD2, O4, ORA, O4, QF2,QF2, O4, ORA, O4, QD, O4, BM2, O4, QD, O4, RA, O4, QF1, QF1, O4, BM, O4,QD1, QD1, O4,
+          Osd, Sd, Osd, RA, O4, QF, Osf, BM, Osf, QF, O4, RA, Osd, Sd,Osd, O4, QD1, QD1, O4, BM, O4, QF1, QF1, O4, RA, O4, QD,
+          O4, BM2, BM2, O4,QD, O4, RA, O4, QF1, QF1, O4, BM, O4, QD1, QD1, O4, Osd, Sd, Osd, RA, O4,QF, Osf, BM, Osf, QF, O4, RA,
+          Osd, Sd, Osd, O4, QD1, QD1, O4, BM, O4, QF1,QF1, O4, RA, O4, QD, O4, BM2, BM2, O4, QD, O4, RA, O4, QF1, QF1, O4, BM,O4,
+          QD1, QD1, O4, Osd, Sd, Osd, RA, O4, QF, Osf, BM, Osf, QF, O4, RA, Osd,Sd, Osd, O4, QD1, QD1, O4, BM, O4, QF1, QF1, O4,
+          RA, O4, QD, O4, BM2, O4,QD, O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4, ORA, O4, QF2, QF2,O4, ORA, O4, QD2, QD2,
+          O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4,ORA, O4, QF2, QF2, O4, ORA, O4, QD2)
+
+parameter[E_tot] = 1.171064246 * 1e9
+
+use, machine
+
+beginning[beta_a] = 8.98979
+beginning[beta_b] = 16.2975
+beginning[alpha_a] = 0
+beginning[alpha_a] = 0
+beginning[eta_x] = 0
+beginning[eta_y] = 0
+beginning[etap_x] = 0
+beginning[etap_y] = 0
+

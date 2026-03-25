@@ -1,0 +1,47 @@
+!TITLE Converted from LATTICE EDITOR: New ring ARC_  Straight Section_d pQFS_W233_4_CELLs_3 supers_2arcs.opt[*].  Tue Mar 24 16:36:47 2026
+
+!  Kinetic energy=270 MeV, mass=1876.54 MeV
+!  BetaX=8.98979 m,  AlphaX=0,  BetaY=16.2975 m,  AlphaY=-0 
+!  DispX=0.000450074 m,  DispPX=1.37503e-15,  DispY=0 m,  DispPY=0 
+
+BM: SBEND,  L=0.505635,  ANGLE=0.2617994247;
+BM2: SBEND,  L=0.2528175,  ANGLE=0.1308997124;
+ORA: DRIFT, L=2.2070568 ;
+O4: DRIFT, L=0.45 ;
+Osf: DRIFT, L=0.1 ;
+Osd: DRIFT, L=0.1 ;
+QF1: QUADRUPOLE,  L=0.2,  K1=1.540299694;
+QD1: QUADRUPOLE,  L=0.2,  K1=-1.107932238;
+QD: QUADRUPOLE,  L=0.2,  K1=-0.7425852607;
+QF: QUADRUPOLE,  L=0.2,  K1=1.101110702;
+QD2: QUADRUPOLE,  L=0.2,  K1=-0.7566799379;
+QF2: QUADRUPOLE,  L=0.2,  K1=1.046985991;
+Sd: SEXTUPOLE, L=0.12, K2=-9.005980982;
+RA: DRIFT, L=2.2070568 ;
+
+MACHINE: LINE=(QD2, O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4, ORA,  
+O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4, ORA, O4, QF2, QF2, O4, ORA, O4,  
+QD2, QD2, O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD, O4, BM2, O4, QD, O4, RA,  
+O4, QF1, QF1, O4, BM, O4, QD1, QD1, O4, Osd, Sd, Osd, RA, O4, QF, Osf, BM,  
+Osf, QF, O4, RA, Osd, Sd, Osd, O4, QD1, QD1, O4, BM, O4, QF1, QF1, O4, RA,  
+O4, QD, O4, BM2, BM2, O4, QD, O4, RA, O4, QF1, QF1, O4, BM, O4, QD1, QD1,  
+O4, Osd, Sd, Osd, RA, O4, QF, Osf, BM, Osf, QF, O4, RA, Osd, Sd, Osd, O4,  
+QD1, QD1, O4, BM, O4, QF1, QF1, O4, RA, O4, QD, O4, BM2, BM2, O4, QD, O4,  
+RA, O4, QF1, QF1, O4, BM, O4, QD1, QD1, O4, Osd, Sd, Osd, RA, O4, QF, Osf,  
+BM, Osf, QF, O4, RA, Osd, Sd, Osd, O4, QD1, QD1, O4, BM, O4, QF1, QF1, O4,  
+RA, O4, QD, O4, BM2, O4, QD, O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD2, QD2,  
+O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4, ORA, O4, QF2, QF2, O4,  
+ORA, O4, QD2, QD2, O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4, ORA,  
+O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4, ORA, O4, QF2, QF2, O4, ORA, O4,  
+QD2, QD2, O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4, ORA, O4, QF2,  
+QF2, O4, ORA, O4, QD, O4, BM2, O4, QD, O4, RA, O4, QF1, QF1, O4, BM, O4,  
+QD1, QD1, O4, Osd, Sd, Osd, RA, O4, QF, Osf, BM, Osf, QF, O4, RA, Osd, Sd,  
+Osd, O4, QD1, QD1, O4, BM, O4, QF1, QF1, O4, RA, O4, QD, O4, BM2, BM2, O4,  
+QD, O4, RA, O4, QF1, QF1, O4, BM, O4, QD1, QD1, O4, Osd, Sd, Osd, RA, O4,  
+QF, Osf, BM, Osf, QF, O4, RA, Osd, Sd, Osd, O4, QD1, QD1, O4, BM, O4, QF1,  
+QF1, O4, RA, O4, QD, O4, BM2, BM2, O4, QD, O4, RA, O4, QF1, QF1, O4, BM,  
+O4, QD1, QD1, O4, Osd, Sd, Osd, RA, O4, QF, Osf, BM, Osf, QF, O4, RA, Osd,  
+Sd, Osd, O4, QD1, QD1, O4, BM, O4, QF1, QF1, O4, RA, O4, QD, O4, BM2, O4,  
+QD, O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4, ORA, O4, QF2, QF2,  
+O4, ORA, O4, QD2, QD2, O4, ORA, O4, QF2, QF2, O4, ORA, O4, QD2, QD2, O4,  
+ORA, O4, QF2, QF2, O4, ORA, O4, QD2);
